@@ -1,0 +1,6 @@
+<h1 class="head1">Edit Profile</h1>
+<div id="table"><%= form_for(@user) do |f| %>
+	<%= f.label :username %>
+	<%= f.text_field :password%>
+	<%= f.submit :update %>
+<% end %></div>

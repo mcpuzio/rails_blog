@@ -1,0 +1,11 @@
+<h1 class="head1">Post History</h1>
+<div id="table"><%= @posts.each do |p| %></div>
+<table>
+	<tr>
+		<td class="table_keys" ><%= link_to "Show", post %></td>
+		<td class="table_keys" ><%= link_to "Edit", edit_post_path %></td>
+		<td class="table_keys" ><%= link_to "Delete Post", post, method: :delete %></td>
+	</tr>
+	<% end %>
+</table>
+<h3 id="new_user"><%= link_to "New Post", new_post_path %></h3>

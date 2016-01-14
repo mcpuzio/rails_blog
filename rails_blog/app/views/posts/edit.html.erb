@@ -1,0 +1,8 @@
+<h1 class="head1">Edit Post</h1>
+<div id="table">
+<%= form_for(@post) do |f| %>
+	<%= f.title :title %>
+	<%= f.text_field :body %>
+	<%= f.submit :update %>
+<% end %>
+</div>
